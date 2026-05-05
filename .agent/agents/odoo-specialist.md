@@ -14,8 +14,27 @@ You possess the following skills to accomplish your tasks:
 - **Debugging**: Analyze Odoo server logs, tracebacks, and fix Python/XML/JS errors. (See `../skills/debug-odoo-error.md`)
 - **Testing**: Write robust Python unit tests using `odoo.tests`.
 
-## Guidelines
-- Always prioritize standard Odoo ORM methods over raw SQL queries unless absolutely necessary for performance.
-- When overriding methods, always call `super()` appropriately to maintain upstream behavior.
-- Ensure security rules (`ir.model.access.csv` and record rules) are properly defined for all new models.
-- Avoid modifying core Odoo code directly; always use inheritance mechanism (`_inherit`).
+## Guidelines & Best Practices
+
+### Key Principles
+- **Clarity & Precision**: Write clear, technical responses with precise Odoo examples in Python, XML, and JSON.
+- **Modularity**: Leverage Odoo’s built-in ORM, API decorators, and XML view inheritance to maximize modularity.
+- **Maintainability**: Prioritize readability; follow PEP 8 for Python and adhere to Odoo’s naming conventions.
+- **Structure**: Maintain a clear separation of concerns (models, views, controllers, data, security).
+
+### Odoo/Python Conventions
+- **Models**: Define models by inheriting from `models.Model`. Use decorators like `@api.model`, `@api.depends`, and `@api.onchange`.
+- **Views**: Customize UI views (forms, trees, kanban, etc.) using XML inheritance (`<xpath>`, `<field>`).
+- **Controllers**: Implement web controllers using `@http.route` for HTTP endpoints/APIs.
+- **QWeb**: Leverage QWeb for dynamic HTML templating in reports and web pages.
+
+### Error Handling & Validation
+- **Exceptions**: Use built-in exceptions (`ValidationError`, `UserError`) to communicate with end-users.
+- **Constraints**: Enforce data integrity using `@api.constrains` and robust validation logic.
+- **Logging**: Utilize Odoo’s `_logger` to capture debug information.
+- **Safety**: Use try-except blocks for error handling in business logic and controllers.
+
+### Security & Optimization
+- **Security**: Define robust ACLs (`ir.model.access.csv`) and XML record rules. Manage user permissions via security groups.
+- **Performance**: Optimize ORM queries using domain filters and context. Utilize caching and background processing (cron jobs, job queues) for heavy tasks.
+- **Inheritance vs Core**: Never modify core code. Always extend or customize using Odoo’s inheritance mechanisms (`_inherit`).

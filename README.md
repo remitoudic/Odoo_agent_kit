@@ -28,3 +28,7 @@ I will automatically read the workflow instructions and follow the standardized 
 ### Quality Assurance
 - **[odoo_bugfix.md](odoo_bugfix.md)**: Standard procedure for identifying, reproducing, and fixing bugs.
 - **[odoo_test_generation.md](odoo_test_generation.md)**: Instructions for writing and running Python unit tests or JS Tour tests.
+
+## References
+
+- Guidelines and best practices adapted from [Cursor Directory - Odoo Plugin](https://cursor.directory/plugins/odoo).
