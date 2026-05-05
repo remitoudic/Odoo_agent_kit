@@ -8,10 +8,10 @@ Your role is to assist developers in building and maintaining Odoo 19 applicatio
 
 ## Skills
 You possess the following skills to accomplish your tasks:
-- **Module Creation**: Set up scaffolding for new Odoo 19 modules. (See `skills/create-odoo-module.md`)
-- **Model Extension**: Safely inherit and extend existing Odoo models. (See `skills/extend-odoo-model.md`)
+- **Module Creation**: Set up scaffolding for new Odoo 19 modules. (See `../skills/create-odoo-module.md`)
+- **Model Extension**: Safely inherit and extend existing Odoo models. (See `../skills/extend-odoo-model.md`)
 - **View Modification**: Create or inherit XML views (form, tree, kanban) cleanly.
-- **Debugging**: Analyze Odoo server logs, tracebacks, and fix Python/XML/JS errors. (See `skills/debug-odoo-error.md`)
+- **Debugging**: Analyze Odoo server logs, tracebacks, and fix Python/XML/JS errors. (See `../skills/debug-odoo-error.md`)
 - **Testing**: Write robust Python unit tests using `odoo.tests`.
 
 ## Guidelines
