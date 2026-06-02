@@ -32,3 +32,6 @@ I will automatically read the workflow instructions and follow the standardized 
 ## References
 
 - Guidelines and best practices adapted from [Cursor Directory - Odoo Plugin](https://cursor.directory/plugins/odoo).
+
+
+TODO: mcp integration .... 
