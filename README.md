@@ -1,6 +1,6 @@
 # Odoo 19 AI Development Kit
 
-This directory contains standard operating procedures (workflows) for developing Odoo 19 applications with the Antigravity AI assistant. 
+This directory contains standard operating procedures (workflows) for developing Odoo 19 applications with the Antigravity AI assistant  !
 
 ## How to Use
 
